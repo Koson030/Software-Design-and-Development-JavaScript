@@ -123,7 +123,8 @@ JavaScript สามารถเพิ่มลงในเว็บเพจไ
 </html>
 
 ```
-[รูปผลการทดลองที่ 1]
+![image](https://github.com/user-attachments/assets/5add19e8-21b7-4085-a9db-559d30b6c3c1)
+
   
 ## การทดลองที่ 2: พื้นฐาน JavaScript
 ### 2.1 การประกาศตัวแปรและชนิดข้อมูล
