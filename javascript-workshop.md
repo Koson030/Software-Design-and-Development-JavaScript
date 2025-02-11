@@ -180,9 +180,30 @@ let person = {
 
 ### บันทึกผลการทดลอง 2.1
 ```html
-[บันทึกโค้ด ที่นี่]
+const Dataperson = {
+Number : "67030030",
+meName : "Koson Pengphipat",
+midterm : "100",
+lastterm : "1000"
+}
+ 
+// สร้าง Object สำหรับเก็บข้อมูลนักศึกษา
+let student = {
+    studentId: '67030030',   // รหัสนักศึกษา
+    name: 'นายโกศล เพ็งพิพัฒน์',   // ชื่อ
+    major: 'เทคโนโลยีคอมพิวเตอร์',   // สาขาวิชา
+    gpa: 3.14  // เกรดเฉลี่ย
+};
+
+// การเข้าถึงข้อมูลจาก Object
+console.log(student.studentId);  // แสดงรหัสนักศึกษา
+console.log(student.name);       // แสดงชื่อ
+console.log(student.major);      // แสดงสาขาวิชา
+console.log(student.gpa);        // แสดงเกรดเฉลี่ย
+console.log(Dataperson);
 ```
-[รูปผลการทดลองที่ 2.1]
+![image](https://github.com/user-attachments/assets/527436e6-5323-495c-9cdc-e33cdfbbbd32)
+
 
 
 ### 2.2 การดำเนินการทางคณิตศาสตร์
