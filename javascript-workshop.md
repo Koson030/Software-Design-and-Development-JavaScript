@@ -76,7 +76,52 @@ JavaScript สามารถเพิ่มลงในเว็บเพจไ
    - มีปุ่มเมื่อคลิกแล้วจะแสดงข้อความที่กรอกในช่องข้อความ
 ### บันทึกผลการทดลอง 
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ทดลอง JavaScript</title>
+</head>
+<body>
+
+    <!-- Inline JavaScript -->
+    <button onclick="alert('นายโกศล เพ็งพิพัฒน์')">ปุ่มที่ 1</button>
+    
+    <!-- ทดสอบ Internal JavaScript -->
+    <button id="btn2">ปุ่มที่ 2</button>
+    
+    <!-- ทดสอบ External JavaScript -->
+    <button id="btn3" onclick="hello3();">ปุ่มที่ 3</button>
+
+    <!-- ช่องกรอกข้อความ -->
+    <input type="text" id="userInput" placeholder="กรอกข้อความที่นี่" />
+    
+    <!-- ปุ่มแสดงข้อความ -->
+    <button onclick="showMessage()">แสดงข้อความ</button>
+    
+    <!-- แสดงข้อความ -->
+    <p id="displayMessage"></p>
+    
+    <!-- Internal JavaScript -->
+    <script>
+        // ปุ่มที่ 2 (แสดงวันที่)
+        document.getElementById('btn2').onclick = function() {
+            alert('11/02/2025');
+        };
+
+        // ฟังก์ชันแสดงข้อความจากช่องกรอก
+        function showMessage() {
+            var userMessage = document.getElementById("userInput").value;
+            document.getElementById("displayMessage").innerHTML = "ข้อความที่คุณกรอกคือ: " + userMessage;
+        }
+    </script>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
 ```
 [รูปผลการทดลองที่ 1]
   
