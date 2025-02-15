@@ -591,9 +591,47 @@ process(function() {
 
 ### บันทึกผลการทดลอง 2.4.1
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทดลอง JavaScript</title>
+</head>
+<body>
+    <script src="work 2.4.js"></script>
+</body>
+</html>
+
 ```
-[รูปผลการทดลองที่ 2.4.1]
+```javascript
+function calculateBMI(weight, height) {
+    return weight / (height * height);
+}
+
+function greetUser(name, age) {
+    if (age < 12) {
+        return `สวัสดีหนูน้อย ${name}!`;
+    } else if (age < 20) {
+        return `Yo! ${name}, เป็นวัยรุ่นเต็มตัวเลยนะเนี่ย!`;
+    } else if (age < 60) {
+        return `สวัสดีคุณ ${name}! ขอให้เป็นวันที่ดีนะ`;
+    } else {
+        return `สวัสดีคุณลุง/คุณป้า ${name}, สุขภาพแข็งแรงนะครับ/ค่ะ!`;
+    }
+}
+
+function isPasswordValid(password) {
+    return password.length > 8;
+}
+
+console.log(calculateBMI(45, 1.65));
+console.log(greetUser("โกศล", 19)); 
+console.log(isPasswordValid("987654321")); 
+
+```
+![image](https://github.com/user-attachments/assets/df8af1db-f136-4aed-8809-95240f91fdda)
+
 
 
 
