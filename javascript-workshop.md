@@ -766,9 +766,76 @@ console.log(isPasswordValid("MyPassWord123"));
 
 ### บันทึกผลการทดลอง 3.1
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณ BMI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        button {
+            padding: 10px;
+            background-color: rgb(255, 17, 0);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>คำนวณค่า BMI</h2>
+        <label for="weight">น้ำหนัก (กก.):</label>
+        <input type="number" id="weight" placeholder="กรอกน้ำหนัก">
+        <label for="height">ส่วนสูง (ซม.):</label>
+        <input type="number" id="height" placeholder="กรอกส่วนสูง">
+        <button onclick="calculateBMI()">คำนวณ</button>
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+        const calculateBMI = () => {
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value) / 100; // แปลงเป็นเมตร
+            
+            if (isNaN(weight) || isNaN(height) || height <= 0) {
+                document.getElementById("result").innerText = "กรุณากรอกค่าที่ถูกต้อง";
+                return;
+            }
+            
+            let bmi = weight / (height * height);
+            let status = bmi < 18.5 ? "ผอม" : bmi < 24.9 ? "สมส่วน" : "อ้วน";
+            
+            document.getElementById("result").innerText = `ค่า BMI: ${bmi.toFixed(2)} (${status})`;
+        };
+    </script>
+</body>
+</html>
+
 ```
-[รูปผลการทดลองที่ 3.1]
+![image](https://github.com/user-attachments/assets/1f8c32a6-045d-4063-b06e-bf19cc630533)
+
 
 ## การทดลองที่ 3.2 : การสร้างฟอร์มสำหรับจองห้องพัก
 การสร้างฟอร์มลงทะเบียนเพื่อรวบรวมข้อมูลที่จำเป็นสำหรับการจองห้องพัก
