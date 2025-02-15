@@ -267,7 +267,7 @@ number /= 2;          // เท่ากับ number = number / 2
 </body>
 </html>
 ```
-```JavaScipt
+```javascript
 let score1 = 75;
 let score2 = 81;
 let score3 = 86;
