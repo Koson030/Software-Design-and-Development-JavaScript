@@ -1121,7 +1121,7 @@ console.log(isPasswordValid("MyPassWord123"));
 </html>
 
 ```
-#สิ่งที่เปลี่ยนแปลง
+
 1.เปลี่ยนสีปุ่มกดเป็นสีแดง
 2.เปลี่ยนสีขอบของอินพุตเมื่อโฟกัส 
 3.เปลี่ยนสีและขนาดของหัวข้อ(h1) 
@@ -1412,6 +1412,7 @@ console.log(isPasswordValid("MyPassWord123"));
 </html>
 
 ```
+1.ปรับปรุงการตรวจสอบข้อมูล 2.เพิ่มการอัปเดตแบบเรียลไทม์ 3.ปรับปรุงการแสดงผลสรุปการจอง 
 ![image](https://github.com/user-attachments/assets/ec0a889e-d713-4e86-9367-9bbfe739aaa1)
 
 
