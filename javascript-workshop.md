@@ -419,53 +419,18 @@ for (let i = 1; i <= 5; i++) {
 
 ### บันทึกผลการทดลอง 2.3
 ```html
-// 1. กำหนดตัวเลข และตรวจสอบว่าเป็นเลขคู่หรือเลขคี่
-function checkEvenOdd(number) {
-    if (number % 2 === 0) {
-        console.log(`${number} เป็นเลขคู่`);
-    } else {
-        console.log(`${number} เป็นเลขคี่`);
-    }
-}
-checkEvenOdd(7);
-checkEvenOdd(10);
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทดลอง JavaScript</title>
+</head>
+<body>
+    <script src="work 2.3.js"></script>
+</body>
+</html>
 
-// 2. ใช้ loop แบบ for แสดงตารางสูตรคูณแม่ 2
-console.log("ตารางสูตรคูณแม่ 2");
-for (let i = 1; i <= 12; i++) {
-    console.log(`2 x ${i} = ${2 * i}`);
-}
-
-// ใช้ loop แบบ while แสดงตารางสูตรคูณแม่ 3
-console.log("ตารางสูตรคูณแม่ 3");
-let j = 1;
-while (j <= 12) {
-    console.log(`3 x ${j} = ${3 * j}`);
-    j++;
-}
-
-// 3. โปรแกรมนับถอยหลังจาก 10 ถึง 1
-console.log("นับถอยหลังจาก 10 ถึง 1");
-for (let k = 10; k >= 1; k--) {
-    console.log(k);
-}
-
-// 4. ตรวจสอบช่วงวัยตามอายุที่กำหนด
-function checkAgeCategory(age) {
-    if (age >= 0 && age <= 12) {
-        console.log("วัยเด็ก");
-    } else if (age >= 13 && age <= 19) {
-        console.log("วัยรุ่น");
-    } else if (age >= 20) {
-        console.log("วัยผู้ใหญ่");
-    } else {
-        console.log("กรุณาใส่อายุที่ถูกต้อง");
-    }
-}
-checkAgeCategory(8);
-checkAgeCategory(16);
-checkAgeCategory(25);
-[บันทึกโค้ด ที่นี่]
 ```
 ```javascript
 function checkEvenOdd(number) {
@@ -512,7 +477,8 @@ checkAgeCategory(25);
 
 ```
 ![image](https://github.com/user-attachments/assets/a19623b6-b454-4a4f-8144-90439ce13812)
-![image](https://github.com/user-attachments/assets/e87005eb-3f27-4307-92d4-90fbe92be5a3)
+![image](https://github.com/user-attachments/assets/3d24091f-5978-4fc7-937e-fd0e4c7a5511)
+
 
 
 ### 2.4 Functions และ Arrow Functions
