@@ -672,9 +672,33 @@ console.log("เลขคู่:", evenNumbers); // [2, 4]
 
 ### บันทึกผลการทดลอง 2.4.2
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทดลอง JavaScript</title>
+</head>
+<body>
+    <script src="work 2.4.2.js"></script>
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
-[รูปผลการทดลองที่ 2.4.2]
+```javascript
+const calculateBMI = (weight, height) => weight / (height * height);
+
+const greetUser = (name, age) => 
+    age < 18 ? `สวัสดี ${name}! คุณยังเป็นวัยรุ่นอยู่เลยนะเนี่ย` : `สวัสดีคุณ ${name}! ยินดีที่ได้รู้จัก`;
+
+const isPasswordValid = password => password.length > 8;
+
+console.log(calculateBMI(45, 1.65)); 
+console.log(greetUser("โกศล", 19)); 
+console.log(isPasswordValid("MyPassWord123")); 
+
+```
+![image](https://github.com/user-attachments/assets/e2979e77-126b-4f2a-953e-1ee2c6b1ab9f)
 
 
 ## การทดลองที่ 3 : การใช้ JavaScript กับ HTML และ CSS
